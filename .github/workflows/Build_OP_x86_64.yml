@@ -8,8 +8,8 @@
 name: Build_x86_64
 
 on: 
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
 
   #push:
   #  branches: 
@@ -18,7 +18,7 @@ on:
   #schedule:
   #  - cron: 0 8 * * 5
   
-  #watch:
+  # watch:
   #  types: [started]
 
 jobs:
@@ -71,7 +71,6 @@ jobs:
       working-directory: ./openwrt
       run: |
         ./scripts/feeds update -a
-        ./scripts/feeds install -a
         ./scripts/feeds install -a
 
     #- name: Import external feeds - passwall

@@ -8,8 +8,8 @@
 name: Build_Newifi_D2
 
 on: 
-  release:
-    types: [published]
+  # release:
+  #   types: [published]
 
   #push:
   #  branches: 
@@ -18,8 +18,8 @@ on:
   #schedule:
   #  - cron: 0 8 * * 5
   
-  #watch:
-  #  types: [started]
+  watch:
+   types: [started]
 
 jobs:
   build:
@@ -70,7 +70,6 @@ jobs:
       working-directory: ./openwrt
       run: |
         ./scripts/feeds update -a
-        ./scripts/feeds install -a
         ./scripts/feeds install -a
     
     #- name: Import external feeds - JerryKuKu Argon
