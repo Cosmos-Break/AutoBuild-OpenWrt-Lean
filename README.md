@@ -1,4 +1,4 @@
-# OpenWrt firmware for Newifi D2
+# OpenWrt firmware for Newifi D2 and Phicomm_K2P
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
 
