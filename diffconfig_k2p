@@ -1,3 +1,6 @@
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_phicomm_k2p=y
+CONFIG_PACKAGE_hostapd-common=y
+CONFIG_PACKAGE_wpad-openssl=y
+CONFIG_WPA_MSG_MIN_PRIORITY=3
